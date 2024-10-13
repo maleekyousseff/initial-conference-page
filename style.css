@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  .image-intro {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; 
+    overflow: hidden;
+  }
+  
+  .image-intro img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;/
+  }
+  .text-overlay {
+    
+    position:absolute;
+    top: 50%; 
+    left: 50%;
+    bottom: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    margin-bottom: 15px;
+
+  }
+  .text-overlay h1 {
+    font-size: 4rem; 
+    margin: 0; 
+  }
+  .text-overlay p {
+    font-size: 2rem; 
+    margin: 0; 
+  }
+
+  
+  .text-overlay:hover {
+    transform: translate(-50%, -50%) scale(1.1); 
+    
+  }
+  .image-intro img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    color: rgb(44, 40, 40);
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+       
+  }
+  
+  #countdown {
+     
+    color: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+    
+  }
+  
+  #countdown div {
+    padding: 50px ;
+    margin: 0px 100px;
+    font-size: 2em;
+  }
+  .hero a {
+    margin: 50px 50px;
+   
+    
+    
+  }
+  .cta-button {
+    background-color: #ff6b6b;
+    color: white;
+    width:1000px;
+    padding: 20px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+ 
+  .speakers {
+    text-align: center;
+    padding: 50px 50px;
+  }
+  .speakers h2{
+    padding: 20px ;
+    font-size: 50px;
+  }
+  .speaker-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .speaker-card {
+    margin: 50px;
+    width: 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .speaker-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .speaker-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .bio {
+    display: none;
+  }
+  
+  .speaker-card:hover .bio {
+    display: block;
+  }
+  
+  .schedule {
+    padding: 50px 0;
+    background-color: #e9ecef;
+  }
+  
+  .schedule-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .schedule-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .location {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .map {
+    margin: 20px 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
